@@ -34,7 +34,7 @@ export default function ComponentsOfferSection() {
     <section className="w-full py-20 pb-2 bg-white mb-0">
       <div className="max-w-6xl mx-auto px-4"> {/* Increased max-width for more space */}
         <h2 className="text-3xl md:text-4xl font-bold font-space-grotesk text-center mb-16 text-slate-900">Components We Offer</h2> {/* Increased bottom margin for header */}
-        <div className="relative flex items-center justify-center h-[450px]"> {/* Set explicit height for carousel area */}
+        <div className="relative flex items-center justify-center h-[380px] sm:h-[420px] md:h-[450px]"> {/* Set explicit height for carousel area */}
           {/* Carousel */}
           <div className="flex w-full justify-center items-center" style={{ perspective: 1400 }}> {/* Increased perspective */}
             {components.map((comp, idx) => {

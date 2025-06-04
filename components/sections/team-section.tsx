@@ -14,7 +14,7 @@ const teamMembers = [
     role: "Team Member",
     bio: "Expert in software development and user experience",
     image: "/aryan.jpeg",
-    social: {linkedin: "https://www.linkedin.com/in/-aryanyadav/", github: "github.com/aryanyadav-dev", website: "https://aryanyadav-portfolio.vercel.app/" },
+    social: {linkedin: "https://www.linkedin.com/in/-aryanyadav/", github: "https://github.com/aryanyadav-dev", website: "https://aryanyadav-portfolio.vercel.app/" },
   },
   {
     name: "Chinmay Sawant",
@@ -64,7 +64,7 @@ export default function TeamSection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
           {teamMembers.map((member, index) => (
             <TeamMemberCard key={index} member={member} index={index} />
           ))}

@@ -52,15 +52,14 @@ export default function HowItWorksSection() {
             {steps.map((step, idx) => (
               <div key={idx} className="flex w-full min-h-0">
                 {/* Left side */}
-                <div className={`flex-1 flex ${idx % 2 === 0 ? 'justify-end' : 'justify-start'} items-center min-h-0`}> 
+                <div className={`flex-1 flex items-center min-h-0 ${idx % 2 === 0 ? 'justify-end pr-2 md:pr-4' : 'justify-start pl-2 md:pl-4'}`}>
                   {idx % 2 === 0 && (
                     <motion.div
                       initial={{ opacity: 0, x: -10 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.4, delay: idx * 0.05 }}
-                      className="bg-white border border-blue-100 rounded-lg shadow-sm px-10 py-6 w-full max-w-3xl flex items-center gap-6 md:ml-0 ml-2"
-                      style={{ margin: 0 }}
+                      className="bg-white border border-blue-100 rounded-lg shadow-sm px-4 sm:px-6 md:px-10 py-6 w-full max-w-2xl flex items-center gap-4 md:gap-6 md:ml-0 ml-2"
                     >
                       <step.icon className="h-7 w-7 text-blue-500 shrink-0" />
                       <div className="text-left">
@@ -90,15 +89,14 @@ export default function HowItWorksSection() {
                   )}
                 </div>
                 {/* Right side */}
-                <div className={`flex-1 flex ${idx % 2 !== 0 ? 'justify-start' : 'justify-end'} items-center min-h-0`}>
+                <div className={`flex-1 flex items-center min-h-0 ${idx % 2 !== 0 ? 'justify-start pl-2 md:pl-4' : 'justify-end pr-2 md:pr-4'}`}>
                   {idx % 2 !== 0 && (
                     <motion.div
                       initial={{ opacity: 0, x: 10 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.4, delay: idx * 0.05 }}
-                      className="bg-white border border-blue-100 rounded-lg shadow-sm px-10 py-6 w-full max-w-3xl flex items-center gap-6 md:mr-0 mr-2"
-                      style={{ margin: 0 }}
+                      className="bg-white border border-blue-100 rounded-lg shadow-sm px-4 sm:px-6 md:px-10 py-6 w-full max-w-2xl flex items-center gap-4 md:gap-6 md:mr-0 mr-2"
                     >
                       <step.icon className="h-7 w-7 text-blue-500 shrink-0" />
                       <div className="text-left">

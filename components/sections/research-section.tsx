@@ -67,7 +67,7 @@ function ResearchCard({ paper, index }: { paper: any; index: number }) {
       initial={{ opacity: 0, y: 30 }}
       animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="bg-card border rounded-lg p-6 flex flex-col w-[22.5rem] aspect-square hover:shadow-md transition-shadow mx-auto"
+      className="bg-card border rounded-lg p-4 md:p-6 flex flex-col w-full max-w-xs sm:max-w-sm md:w-[22.5rem] aspect-square hover:shadow-md transition-shadow mx-auto"
     >
       <h3 className="text-xl font-semibold mb-3 line-clamp-2">{paper.title}</h3>
       <div className="flex items-center text-sm text-muted-foreground mb-4">
