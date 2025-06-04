@@ -2,6 +2,8 @@
 
 Transforming the way we explore the sky. Aeroverse XR is dedicated to revolutionizing aerospace technology education and exploration through immersive Augmented Reality (AR) experiences.
 
+<img width="1470" alt="Image" src="https://github.com/user-attachments/assets/989eb741-9c87-40fb-a20b-1ead60d6b2fd" />
+
 ## Overview
 
 Aeroverse XR is a web-based platform designed to make learning about complex aerospace technologies accessible and engaging. Users can explore detailed 3D models of aerospace components in AR, get instant AI-powered explanations, and even collaborate with others in real-time. The project aims to bridge the gap between theoretical knowledge and practical understanding in the aerospace domain, catering to students, educators, and enthusiasts alike.
