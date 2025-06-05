@@ -24,10 +24,10 @@ export default function HeroSection() {
   }
 
   return (
-    <section id="hero" className="relative w-full h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-slate-900 via-slate-950 to-blue-950">
+    <section id="hero" className="relative w-full min-h-[100svh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-slate-900 via-slate-950 to-blue-950">
       {/* Video Background */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <div className="absolute inset-0 bg-black/40 z-10"></div>
+        <div className="absolute inset-0 bg-black/50 z-10"></div>
         <video
           autoPlay
           muted
@@ -40,23 +40,23 @@ export default function HeroSection() {
         </video>
       </div>
 
-      <Container className="relative z-10 py-20">
+      <Container className="relative z-10 py-16 md:py-20 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className={`text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-blue-300 to-blue-600 bg-clip-text text-transparent drop-shadow-lg ${awesome.variable} font-awesome`}>Transforming the way we explore the sky</h1>
+            <h1 className={`text-4xl sm:text-5xl md:text-7xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-blue-400 via-blue-300 to-blue-600 bg-clip-text text-transparent drop-shadow-lg ${awesome.variable} font-awesome leading-tight`}>Transforming the way we explore the sky</h1>
           </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="mb-8"
+            className="mb-6 sm:mb-8"
           >
-            <p className={`text-xl md:text-2xl text-blue-100 max-w-2xl mx-auto font-sans`}>Revolutionizing aerospace technology education and exploration through immersive experiences.</p>
+            <p className={`text-lg sm:text-xl md:text-2xl text-blue-100 max-w-2xl mx-auto font-sans`}>Revolutionizing aerospace technology education and exploration through immersive experiences.</p>
           </motion.div>
 
           <motion.div
@@ -65,7 +65,7 @@ export default function HeroSection() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-4"
           >
-            <Button asChild size="lg" className="group">
+            <Button asChild size="lg" className="group w-full sm:w-auto">
               <Link href="/download">
               <Download className="mr-2 h-4 w-4 group-hover:animate-bounce" />
               Download the App
@@ -77,10 +77,10 @@ export default function HeroSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1.5 }}
-            className="absolute bottom-2 left-1/2 transform -translate-x-1/2 animate-bounce"
+            className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hidden sm:block"
           >
             <Link href="#how-it-works" aria-label="Scroll to How It Works">
-              <ArrowDown className="h-10 w-10 text-blue-500" />
+              <ArrowDown className="h-8 w-8 md:h-10 md:w-10 text-blue-500" />
             </Link>
           </motion.div>
         </div>

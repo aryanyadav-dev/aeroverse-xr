@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { DownloadCloud, BarChart, Cpu, CheckCircle } from "lucide-react"
+import { Container } from "@/components/ui/container"
 
 const steps = [
   {
@@ -33,9 +34,9 @@ const steps = [
 
 export default function HowItWorksSection() {
   return (
-    <section id="how-it-works" className="bg-white w-full px-0 mt-12 mb-20">
-      <div className="max-w-none w-full mx-0">
-        <div className="text-center mb-8 mt-6">
+    <section id="how-it-works" className="bg-white w-full px-4 sm:px-0 py-16 sm:py-20">
+      <Container className="max-w-7xl mx-auto">
+        <div className="text-center mb-12">
           <motion.h2
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -45,8 +46,10 @@ export default function HowItWorksSection() {
             How It Works
           </motion.h2>
         </div>
-        <div className="relative w-full flex flex-col items-center">
-          {/* Central vertical line - increased width */}
+        
+        {/* Desktop Timeline (hidden on mobile) */}
+        <div className="hidden md:block relative w-full">
+          {/* Central vertical line */}
           <div className="absolute left-1/2 top-0 h-full w-3 bg-gradient-to-b from-blue-100 via-blue-200 to-blue-100 rounded-full -translate-x-1/2 z-0" />
           <div className="flex flex-col w-full gap-10">
             {steps.map((step, idx) => (
@@ -59,8 +62,7 @@ export default function HowItWorksSection() {
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.4, delay: idx * 0.05 }}
-                      className="bg-white border border-blue-100 rounded-lg shadow-sm px-4 sm:px-6 md:px-10 py-6 w-full max-w-[46rem] flex items-center gap-4 md:gap-6 md:ml-0 ml-2"
-                      style={{ margin: 0 }}
+                      className="bg-white border border-blue-100 rounded-lg shadow-sm px-4 sm:px-6 md:px-10 py-6 w-full max-w-[46rem] flex items-center gap-4 md:gap-6 mr-4"
                     >
                       <step.icon className="h-7 w-7 text-blue-500 shrink-0" />
                       <div className="text-left">
@@ -97,8 +99,7 @@ export default function HowItWorksSection() {
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.4, delay: idx * 0.05 }}
-                      className="bg-white border border-blue-100 rounded-lg shadow-sm px-4 sm:px-6 md:px-10 py-6 w-full max-w-[46rem] flex items-center gap-4 md:gap-6 md:mr-0 mr-2"
-                      style={{ margin: 0 }}
+                      className="bg-white border border-blue-100 rounded-lg shadow-sm px-4 sm:px-6 md:px-10 py-6 w-full max-w-[46rem] flex items-center gap-4 md:gap-6 ml-4"
                     >
                       <step.icon className="h-7 w-7 text-blue-500 shrink-0" />
                       <div className="text-left">
@@ -113,7 +114,52 @@ export default function HowItWorksSection() {
             ))}
           </div>
         </div>
-      </div>
+        
+        {/* Mobile Timeline (vertical, shown only on mobile) */}
+        <div className="md:hidden relative">
+          <div className="absolute left-4 top-0 h-full w-1 bg-gradient-to-b from-blue-100 via-blue-200 to-blue-100 rounded-full z-0" />
+          <div className="flex flex-col gap-8">
+            {steps.map((step, idx) => (
+              <div key={idx} className="flex">
+                {/* Left timeline dot */}
+                <div className="relative flex flex-col items-center mr-4">
+                  <motion.div
+                    className="w-6 h-6 rounded-full bg-white border-3 border-blue-400 flex items-center justify-center shadow z-10"
+                    animate={{ boxShadow: [
+                      "0 0 0 0 #60a5fa55",
+                      "0 0 0 8px #60a5fa22",
+                      "0 0 0 0 #60a5fa55"
+                    ] }}
+                    transition={{ duration: 2, repeat: Infinity, repeatType: "loop" }}
+                  >
+                    <step.icon className="h-3 w-3 text-blue-500" />
+                  </motion.div>
+                  {/* Connector except for last */}
+                  {idx < steps.length - 1 && (
+                    <div className="w-1 flex-1 bg-gradient-to-b from-blue-200 to-blue-100 absolute top-6 bottom-0 left-1/2 -translate-x-1/2" />
+                  )}
+                </div>
+                
+                {/* Content */}
+                <motion.div
+                  initial={{ opacity: 0, x: 10 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: idx * 0.05 }}
+                  className="bg-white border border-blue-100 rounded-lg shadow-sm p-4 flex-1"
+                >
+                  <div className="flex items-center gap-3 mb-2">
+                    <step.icon className="h-5 w-5 text-blue-500 shrink-0" />
+                    <div className="text-xs font-semibold uppercase text-slate-400 tracking-wider">{step.title}</div>
+                  </div>
+                  <div className="text-xl font-bold text-blue-600 leading-tight mb-1">{step.heading}</div>
+                  <div className="text-sm text-slate-500">{step.description}</div>
+                </motion.div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Container>
     </section>
   )
 }

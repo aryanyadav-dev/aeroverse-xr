@@ -46,25 +46,25 @@ export default function TeamSection() {
   })
 
   return (
-    <section id="team" className="py-20 bg-white mt-40">
+    <section id="team" className="py-16 md:py-20 bg-white mt-20 md:mt-40 px-4 sm:px-6 md:px-0">
       <Container>
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="text-center mb-12 md:mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold font-space-grotesk mb-4">
             Meet Our Team
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
             The brilliant minds behind Aeroverse XR, combining expertise in space technology,
             augmented reality, and education.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {teamMembers.map((member, index) => (
             <TeamMemberCard key={index} member={member} index={index} />
           ))}
@@ -75,7 +75,7 @@ export default function TeamSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className="mt-16 text-center"
+          className="mt-12 md:mt-16 text-center"
         >
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Our team has experience in augmented reality, development, and educational technology. Together, we're revolutionizing how people learn about and interact with space technology.
@@ -108,7 +108,7 @@ function TeamMemberCard({ member, index }: { member: any; index: number }) {
       initial={{ opacity: 0, y: 30 }}
       animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="bg-card border rounded-lg overflow-hidden group"
+      className="bg-card border rounded-lg overflow-hidden group h-full flex flex-col"
     >
       <div className="aspect-square relative overflow-hidden flex items-center justify-center bg-slate-100">
         {member.image && !imgError ? (
@@ -124,11 +124,11 @@ function TeamMemberCard({ member, index }: { member: any; index: number }) {
           <span className="text-4xl font-bold text-slate-400">{getInitials(member.name)}</span>
         )}
       </div>
-      <div className="p-5">
+      <div className="p-4 sm:p-5 flex flex-col flex-grow">
         <h3 className="font-bold text-lg">{member.name}</h3>
         <p className="text-sm text-muted-foreground mb-2">{member.role}</p>
-        <p className="text-sm mb-4">{member.bio}</p>
-        <div className="flex space-x-4 mt-2">
+        <p className="text-sm mb-4 flex-grow">{member.bio}</p>
+        <div className="flex space-x-4 mt-auto">
           <Link href={member.social.linkedin} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-blue-600 transition-colors">
             <Linkedin className="h-5 w-5" />
           </Link>

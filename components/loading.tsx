@@ -31,14 +31,15 @@ export default function LoadingScreen() {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 1 }}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black overflow-hidden"
+          style={{ width: '100vw', height: '100vh' }}
         >
           {/* Starfield */}
           <div className="absolute inset-0 overflow-hidden">
             {stars.map(star => (
               <div
                 key={star.key}
-              style={{
+                style={{
                   position: 'absolute',
                   left: `${star.left}%`,
                   top: `${star.top}%`,
@@ -48,11 +49,12 @@ export default function LoadingScreen() {
                   background: 'white',
                   opacity: star.opacity,
                   filter: 'blur(0.5px)',
-              }}
-            />
-          ))}
+                }}
+              />
+            ))}
           </div>
-          {/* Progress Ring */}
+          
+          {/* Progress Ring - Centered */}
           <div className="relative flex items-center justify-center">
             <svg width="120" height="120" className="block">
               <circle
@@ -86,9 +88,13 @@ export default function LoadingScreen() {
               {progress}
             </span>
           </div>
-          <span className="absolute bottom-12 text-blue-300 tracking-widest text-xs font-mono opacity-80 animate-pulse">
-            Initializing Space Systems...
-          </span>
+          
+          {/* Text centered at bottom */}
+          <div className="absolute bottom-12 left-0 right-0 text-center">
+            <span className="text-blue-300 tracking-widest text-xs font-mono opacity-80 animate-pulse">
+              Initializing Space Systems...
+            </span>
+          </div>
         </motion.div>
       )}
     </AnimatePresence>

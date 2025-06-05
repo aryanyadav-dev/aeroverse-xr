@@ -5,8 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Container } from "@/components/ui/container"
 import { Button } from "@/components/ui/button"
-import { Menu, X, Rocket } from "lucide-react"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 import { cn } from "@/lib/utils"
 import { scroller } from "react-scroll"
 import { usePathname } from "next/navigation"
@@ -30,12 +29,10 @@ function handleSmoothScroll(target: string) {
 }
 
 export default function Navigation() {
-  const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [pastHero, setPastHero] = useState(false)
   const [showNav, setShowNav] = useState(true)
   const pathname = usePathname()
-  const heroRef = useRef<HTMLElement | null>(null)
   const lastScrollY = useRef(0)
 
   useEffect(() => {
@@ -70,21 +67,21 @@ export default function Navigation() {
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300",
         scrolled
-          ? "bg-transparent"
+          ? "bg-white/80 backdrop-blur-md shadow-sm"
           : "bg-transparent"
       )}
     >
       <Container>
-        <nav className="flex items-center justify-between py-4">
-          <Link href="/" className="flex items-center space-x-2">
-            <Image src="/aero.png" alt="Aeroverse XR Logo" width={40} height={40} className="rounded-md" />
-            <span className={`font-space-grotesk text-xl font-bold tracking-tight ${pathname === "/download" || pastHero ? "text-black" : "text-white drop-shadow-md"}`}>
+        <nav className="flex items-center justify-between py-3 md:py-4">
+          <Link href="/" className="flex items-center space-x-2 flex-shrink min-w-0 z-20">
+            <Image src="/aero.png" alt="Aeroverse XR Logo" width={36} height={36} className="rounded-md flex-shrink-0" />
+            <span className={`font-space-grotesk text-base sm:text-lg font-bold tracking-tight truncate ${pathname === "/download" || pastHero ? "text-black" : "text-white drop-shadow-md"}`}>
               Aeroverse XR
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-6">
+          {/* Desktop Navigation - Only visible on desktop */}
+          <div className="hidden lg:flex items-center space-x-6">
             {navLinks.map((link, index) => (
               <motion.div
                 key={link.name}
@@ -94,7 +91,7 @@ export default function Navigation() {
               >
                 <button
                   onClick={() => handleSmoothScroll(link.href)}
-                  className="font-medium text-muted-foreground hover:text-white transition-colors bg-transparent border-none outline-none cursor-pointer"
+                  className={`font-medium hover:text-white transition-colors bg-transparent border-none outline-none cursor-pointer ${pathname === "/download" || pastHero ? "text-gray-700 hover:text-gray-900" : "text-gray-200 hover:text-white"}`}
                   style={{ background: 'none' }}
                 >
                   {link.name}
@@ -102,54 +99,8 @@ export default function Navigation() {
               </motion.div>
             ))}
           </div>
-
-          {/* Mobile Navigation Toggle */}
-          <button
-            className="md:hidden p-2"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle Menu"
-          >
-            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
         </nav>
       </Container>
-
-      {/* Mobile Navigation Menu */}
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3 }}
-            className="md:hidden bg-background border-b"
-          >
-            <Container className="py-4">
-              <div className="flex flex-col space-y-4">
-                {navLinks.map((link, index) => (
-                  <motion.div
-                    key={link.name}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.3, delay: index * 0.1 + 0.3 }}
-                  >
-                    <button
-                      onClick={() => {
-                        handleSmoothScroll(link.href)
-                        setIsOpen(false)
-                      }}
-                      className="font-medium text-foreground hover:text-white py-2 block bg-transparent border-none outline-none cursor-pointer w-full text-left"
-                      style={{ background: 'none' }}
-                    >
-                      {link.name}
-                    </button>
-                  </motion.div>
-                ))}
-              </div>
-            </Container>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </motion.header>
   )
 }
