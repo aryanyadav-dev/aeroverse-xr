@@ -6,28 +6,28 @@ import { Container } from "@/components/ui/container"
 
 const steps = [
   {
-    title: "Scan & Explore in AR",
-    heading: "Scan & Explore in AR",
+    title: "Scan & Explore in XR",
+    heading: "Scan & Explore in XR",
     description:
-      "Users launch the app and select or scan an aerospace component or vehicle. The app places a detailed, interactive 3D exploded view of the component in their real-world environment using markerless AR.",
+      "Users launch the app and select or scan an aerospace component or vehicle. The app places a detailed, interactive 3D exploded view of the component in their real-world environment using markerless XR.",
     icon: DownloadCloud,
   },
   {
     title: "Instant AI Explanations",
     heading: "Instant AI Explanations",
-    description: "When a user taps or focuses on a part, the Gemini API generates a concise, technical explanation of that component—covering its function, materials, and operation—right inside the AR scene.",
+    description: "When a user taps or focuses on a part, the Gemini API generates a concise, technical explanation of that component—covering its function, materials, and operation—right inside the XR scene.",
     icon: BarChart,
   },
   {
     title: "Real-Time Multilingual Translation",
     heading: "Real-Time Multilingual Translation",
-    description: "Using ML Kit, the app instantly translates both spoken instructions and on-screen AR labels into the user's preferred language, all on-device and in real time. This ensures accessibility and seamless collaboration, even in multiplayer sessions.",
+    description: "Using ML Kit, the app instantly translates both spoken instructions and on-screen XR labels into the user's preferred language, all on-device and in real time. This ensures accessibility and seamless collaboration, even in multiplayer sessions.",
     icon: Cpu,
   },
   {
     title: "Collaborative Learning & Feedback",
     heading: "Collaborative Learning & Feedback",
-    description: "Multiple users can join the same AR session, interact with components, and receive synchronized explanations and translations. Users can also share feedback or complete training tasks, with progress tracked for continuous improvement.",
+    description: "Multiple users can join the same XR session, interact with components, and receive synchronized explanations and translations. Users can also share feedback or complete training tasks, with progress tracked for continuous improvement.",
     icon: CheckCircle,
   },
 ]
