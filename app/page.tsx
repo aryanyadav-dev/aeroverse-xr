@@ -5,6 +5,7 @@ import TeamSection from "@/components/sections/team-section"
 import ResearchSection from "@/components/sections/research-section"
 import FaqSection from "@/components/sections/faq-section"
 import ContactSection from "@/components/sections/contact-section"
+import AnalyticsSection from "@/components/sections/AnalyticsSection";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <HeroSection />
       <HowItWorksSection />
       <ComponentsOfferSection />
+        <AnalyticsSection />
       <TeamSection />
       <ResearchSection />
       <FaqSection />

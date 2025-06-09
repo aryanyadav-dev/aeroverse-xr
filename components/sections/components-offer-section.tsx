@@ -8,22 +8,22 @@ import { Container } from "@/components/ui/container"
 const components = [
   {
     name: "James Webb Telescope",
-    description: "Explore the engineering marvel of the James Webb Space Telescope in AR.",
+    description: "Webb is the premier observatory of the next decade, serving thousands of astronomers worldwide. It studies every phase in the history of our Universe.",
     image: "/james-webb-telescope.jpeg",
   },
   {
     name: "Starlink",
-    description: "Understand the Starlink satellite and its global internet mission.",
+    description: "Starlink is the world's first and largest satellite constellation using a low Earth orbit to deliver broadband internet capable of supporting streaming, online gaming, video calls and more.",
     image: "/starlink.jpeg",
   },
   {
     name: "Curiosity Rover",
-    description: "Simulate the Mars Curiosity Rover and its scientific instruments.",
+    description: "Part of NASA's Mars Science Laboratory mission, at the time of launch, Curiosity was the largest and most capable rover ever sent to Mars at that time.",
     image: "/curiosityrover.jpeg",
   },
   {
     name: "Turbofan Engine",
-    description: "See the inner workings of a modern turbofan engine in 3D.",
+    description: "Turbojet engines are found in military fighter jet aircraft. These aircraft fly fast, are loud, and do not have much range.Turbofan engines are found in civilian commercial airline aircraft.",
     image: "/turbofanjetengine.jpg",
   },
 ]

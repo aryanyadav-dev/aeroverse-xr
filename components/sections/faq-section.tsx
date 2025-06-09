@@ -54,7 +54,7 @@ export default function FaqSection() {
             Frequently Asked Questions
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-figtree">
-            Find answers to common questions about Aeroverse XR and our space technology platform.
+            Find answers to common questions about Aeroverse XR and our VR platform.
           </p>
         </motion.div>
 

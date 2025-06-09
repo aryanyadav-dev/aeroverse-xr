@@ -1,34 +1,30 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { DownloadCloud, BarChart, Cpu, CheckCircle } from "lucide-react"
+import {DownloadCloud, BarChart, Cpu, CheckCircle, Sparkles, ScanIcon, Users} from "lucide-react"
 import { Container } from "@/components/ui/container"
 
 const steps = [
   {
-    title: "Scan & Explore in XR",
     heading: "Scan & Explore in XR",
     description:
-      "Users launch the app and select or scan an aerospace component or vehicle. The app places a detailed, interactive 3D exploded view of the component in their real-world environment using markerless XR.",
-    icon: DownloadCloud,
+      "You can launch the app and select the component that you'd like to view in XR. Right not we offer only limited components but we intend to add more component as the application grows. After scanning a plane, the ARKit places a detailed, interactive 3D component in your real world environment using markerless AR.",
+    icon: ScanIcon,
   },
   {
-    title: "Instant AI Explanations",
-    heading: "Instant AI Explanations",
-    description: "When a user taps or focuses on a part, the Gemini API generates a concise, technical explanation of that component—covering its function, materials, and operation—right inside the XR scene.",
-    icon: BarChart,
+    heading: "What else can you do?",
+    description: "Right now the basic operations you can perform on the application are - annotate, explode, reassemble and talk to the 'Gemini Ai' to get any of your doubts cleared. When you tap or focus on a part & communicate with the Ai, you will get a concise technical explanation of that specific part - covering it's functions, materials it's made up of and operation. Right in your environment.",
+    icon: Sparkles,
   },
   {
-    title: "Real-Time Multilingual Translation",
     heading: "Real-Time Multilingual Translation",
-    description: "Using ML Kit, the app instantly translates both spoken instructions and on-screen XR labels into the user's preferred language, all on-device and in real time. This ensures accessibility and seamless collaboration, even in multiplayer sessions.",
+    description: "Using ML kit, our app instantly translates both spoken instructions & on-screen instructions and on-screen annotated labels into our preferred language, all on device and in real time. This promotes accessibility and a better understanding of the concepts from a user point of view.",
     icon: Cpu,
   },
   {
-    title: "Collaborative Learning & Feedback",
-    heading: "Collaborative Learning & Feedback",
-    description: "Multiple users can join the same XR session, interact with components, and receive synchronized explanations and translations. Users can also share feedback or complete training tasks, with progress tracked for continuous improvement.",
-    icon: CheckCircle,
+    heading: "Welcome to the party!",
+    description: "Well, in our application party doesn't actually mean a party but a collaborative learning & feedback loop which you can join in with your friends, classmates, instructors & supervisors. Together you can receive synchronized explanations & translations. While this feature is still under testing we are aiming to add a gamified version of assembling the components. Where you and your friends can together assemble a component or part under a given timeframe, just like a puzzle.",
+    icon: Users,
   },
 ]
 
@@ -43,7 +39,7 @@ export default function HowItWorksSection() {
             transition={{ duration: 0.4 }}
             className="text-3xl md:text-4xl font-bold font-space-grotesk text-slate-800 font-zodiak font-bold"
           >
-            How It Works
+            How it Works
           </motion.h2>
         </div>
         
@@ -66,7 +62,6 @@ export default function HowItWorksSection() {
                     >
                       <step.icon className="h-7 w-7 text-blue-500 shrink-0" />
                       <div className="text-left">
-                        <div className="text-xs font-semibold uppercase text-slate-400 tracking-wider leading-tight">{step.title}</div>
                         <div className="text-2xl md:text-3xl font-bold text-blue-600 leading-tight">{step.heading}</div>
                         <div className="text-sm text-slate-500 leading-tight mt-1">{step.description}</div>
                       </div>
@@ -103,7 +98,6 @@ export default function HowItWorksSection() {
                     >
                       <step.icon className="h-7 w-7 text-blue-500 shrink-0" />
                       <div className="text-left">
-                        <div className="text-xs font-semibold uppercase text-slate-400 tracking-wider leading-tight">{step.title}</div>
                         <div className="text-2xl md:text-3xl font-bold text-blue-600 leading-tight">{step.heading}</div>
                         <div className="text-sm text-slate-500 leading-tight mt-1">{step.description}</div>
                       </div>
@@ -150,7 +144,6 @@ export default function HowItWorksSection() {
                 >
                   <div className="flex items-center gap-3 mb-2">
                     <step.icon className="h-5 w-5 text-blue-500 shrink-0" />
-                    <div className="text-xs font-semibold uppercase text-slate-400 tracking-wider">{step.title}</div>
                   </div>
                   <div className="text-xl font-bold text-blue-600 leading-tight mb-1">{step.heading}</div>
                   <div className="text-sm text-slate-500">{step.description}</div>
