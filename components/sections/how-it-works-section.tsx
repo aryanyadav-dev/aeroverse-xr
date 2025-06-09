@@ -41,7 +41,7 @@ export default function HowItWorksSection() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
-            className="text-3xl md:text-4xl font-bold font-space-grotesk text-slate-800"
+            className="text-3xl md:text-4xl font-bold font-space-grotesk text-slate-800 font-zodiak font-bold"
           >
             How It Works
           </motion.h2>
@@ -62,7 +62,7 @@ export default function HowItWorksSection() {
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.4, delay: idx * 0.05 }}
-                      className="bg-white border border-blue-100 rounded-lg shadow-sm px-4 sm:px-6 md:px-10 py-6 w-full max-w-[46rem] flex items-center gap-4 md:gap-6 mr-4"
+                      className="bg-white border border-blue-100 rounded-lg shadow-sm px-4 sm:px-6 md:px-10 py-6 w-full max-w-[46rem] flex items-center gap-4 md:gap-6 mr-4 font-figtree"
                     >
                       <step.icon className="h-7 w-7 text-blue-500 shrink-0" />
                       <div className="text-left">
@@ -99,7 +99,7 @@ export default function HowItWorksSection() {
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.4, delay: idx * 0.05 }}
-                      className="bg-white border border-blue-100 rounded-lg shadow-sm px-4 sm:px-6 md:px-10 py-6 w-full max-w-[46rem] flex items-center gap-4 md:gap-6 ml-4"
+                      className="bg-white border border-blue-100 rounded-lg shadow-sm px-4 sm:px-6 md:px-10 py-6 w-full max-w-[46rem] flex items-center gap-4 md:gap-6 ml-4 font-figtree"
                     >
                       <step.icon className="h-7 w-7 text-blue-500 shrink-0" />
                       <div className="text-left">

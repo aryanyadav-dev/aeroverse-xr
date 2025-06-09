@@ -10,7 +10,7 @@ import { scroller } from "react-scroll"
 import localFont from "next/font/local"
 
 // Add font imports with corrected paths
-const awesome = localFont({ src: "../../fonts/Awesome Serif Desktop Fonts/Regular Fonts/Regular/AwesomeSerif-Regular.otf", variable: "--font-awesome" })
+// const awesome = localFont({ src: "../../fonts/Awesome Serif Desktop Fonts/Regular Fonts/Regular/AwesomeSerif-Regular.otf", variable: "--font-awesome" })
 // const metrik = localFont({ src: "../../fonts/Metrik - Trial Font/MetrikTrial-Regular.otf", variable: "--font-metrik" }) // Metrik font removed
 
 export default function HeroSection() {
@@ -41,13 +41,13 @@ export default function HeroSection() {
       </div>
 
       <Container className="relative z-10 py-16 md:py-20 px-4 sm:px-6">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className={`text-4xl sm:text-5xl md:text-7xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-blue-400 via-blue-300 to-blue-600 bg-clip-text text-transparent drop-shadow-lg ${awesome.variable} font-awesome leading-tight`}>Transforming the way we explore the sky</h1>
+            <h1 className={`text-4xl sm:text-5xl md:text-7xl mb-4 sm:mb-6 bg-gradient-to-r from-blue-400 via-blue-300 to-blue-600 bg-clip-text text-transparent drop-shadow-lg font-zodiak font-bold leading-tight`}>Transforming the way we explore the sky</h1>
           </motion.div>
 
           <motion.div
@@ -56,7 +56,7 @@ export default function HeroSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mb-6 sm:mb-8"
           >
-            <p className={`text-lg sm:text-xl md:text-2xl text-blue-100 max-w-2xl mx-auto font-sans`}>Revolutionizing aerospace technology education and exploration through immersive experiences.</p>
+            <p className={`text-lg sm:text-xl md:text-2xl text-blue-100 max-w-2xl mx-auto font-figtree`}>Revolutionizing aerospace technology education and exploration through immersive experiences.</p>
           </motion.div>
 
           <motion.div

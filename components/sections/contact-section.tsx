@@ -33,7 +33,7 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-20 bg-white flex flex-col items-center justify-center">
       <Container>
-        <h2 className="text-3xl md:text-4xl font-bold font-space-grotesk mb-12 text-center text-slate-900">Contact Us</h2>
+        <h2 className="text-3xl md:text-4xl font-bold font-zodiak mb-12 text-center text-slate-900">Contact Us</h2>
         <div className="flex justify-center items-center">
           <a
             href=""

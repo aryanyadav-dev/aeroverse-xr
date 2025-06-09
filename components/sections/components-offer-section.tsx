@@ -50,7 +50,7 @@ export default function ComponentsOfferSection() {
   return (
     <section className="w-full py-16 sm:py-20 pb-2 bg-white mb-0 overflow-hidden">
       <Container>
-        <h2 className="text-3xl md:text-4xl font-bold font-space-grotesk text-center mb-12 md:mb-16 text-slate-900">Components We Offer</h2>
+        <h2 className="text-3xl md:text-4xl text-center mb-12 md:mb-16 text-slate-900 font-zodiak font-bold">Components We Offer</h2>
         <div className="relative flex items-center justify-center h-[380px] sm:h-[420px] md:h-[450px]">
           {/* Carousel */}
           <div className="flex w-full justify-center items-center overflow-visible" style={{ perspective: 1200 }}>
@@ -100,8 +100,8 @@ export default function ComponentsOfferSection() {
                         <span className="text-5xl sm:text-6xl text-blue-400">🛰️</span>
                       )}
                     </div>
-                    <h3 className="text-lg sm:text-xl font-bold text-blue-700 mb-1 text-center">{comp.name}</h3>
-                    <p className="text-slate-600 text-center text-xs sm:text-sm leading-relaxed">{comp.description}</p>
+                    <h3 className="text-lg sm:text-xl font-figtree font-semibold text-blue-700 mb-1 text-center">{comp.name}</h3>
+                    <p className="text-slate-600 text-center font-figtree text-xs sm:text-sm leading-relaxed">{comp.description}</p>
                   </div>
                 </motion.div>
               )

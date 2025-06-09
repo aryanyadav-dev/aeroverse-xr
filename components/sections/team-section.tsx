@@ -55,10 +55,10 @@ export default function TeamSection() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12 md:mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold font-space-grotesk mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold font-zodiak mb-4">
             Meet Our Team
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto font-figtree">
             The brilliant minds behind Aeroverse XR, combining expertise in space technology,
             augmented reality, and education.
           </p>
@@ -77,7 +77,7 @@ export default function TeamSection() {
           transition={{ duration: 0.5, delay: 0.5 }}
           className="mt-12 md:mt-16 text-center"
         >
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-muted-foreground max-w-2xl mx-auto font-figtree">
             Our team has experience in augmented reality, development, and educational technology. Together, we're revolutionizing how people learn about and interact with space technology.
           </p>
         </motion.div>
@@ -125,9 +125,9 @@ function TeamMemberCard({ member, index }: { member: any; index: number }) {
         )}
       </div>
       <div className="p-4 sm:p-5 flex flex-col flex-grow">
-        <h3 className="font-bold text-lg">{member.name}</h3>
-        <p className="text-sm text-muted-foreground mb-2">{member.role}</p>
-        <p className="text-sm mb-4 flex-grow">{member.bio}</p>
+        <h3 className="font-bold font-zodiak text-lg">{member.name}</h3>
+        <p className="text-sm text-muted-foreground mb-2 font-figtree font-semibold">{member.role}</p>
+        <p className="text-sm mb-4 flex-grow font-figtree">{member.bio}</p>
         <div className="flex space-x-4 mt-auto">
           <Link href={member.social.linkedin} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-blue-600 transition-colors">
             <Linkedin className="h-5 w-5" />

@@ -15,14 +15,25 @@ export default function LoadingScreen() {
     return () => clearTimeout(frame)
   }, [progress])
 
-  // Generate a simple starfield
-  const stars = Array.from({ length: 40 }, (_, i) => ({
-    left: Math.random() * 100,
-    top: Math.random() * 100,
-    size: Math.random() * 2 + 1,
-    opacity: Math.random() * 0.5 + 0.5,
-    key: i,
-  }))
+  // Generate a simple starfield only on the client
+  const [stars, setStars] = useState<Array<{
+    left: number
+    top: number
+    size: number
+    opacity: number
+    key: number
+  }>>([])
+
+  useEffect(() => {
+    const generatedStars = Array.from({ length: 40 }, (_, i) => ({
+      left: Math.random() * 100,
+      top: Math.random() * 100,
+      size: Math.random() * 2 + 1,
+      opacity: Math.random() * 0.5 + 0.5,
+      key: i,
+    }))
+    setStars(generatedStars)
+  }, [])
 
   return (
     <AnimatePresence>

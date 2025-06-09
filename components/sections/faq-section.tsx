@@ -50,10 +50,10 @@ export default function FaqSection() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold font-space-grotesk mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold font-zodiak mb-4">
             Frequently Asked Questions
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-figtree">
             Find answers to common questions about Aeroverse XR and our space technology platform.
           </p>
         </motion.div>
@@ -92,7 +92,7 @@ function FaqItem({ faq, index }: { faq: any; index: number }) {
             : "bg-card hover:bg-muted/50"
         )}
       >
-        <span className="font-medium">{faq.question}</span>
+        <span className="font-figtree">{faq.question}</span>
         <ChevronDown
           className={cn(
             "h-5 w-5 transition-transform",
@@ -109,7 +109,7 @@ function FaqItem({ faq, index }: { faq: any; index: number }) {
             transition={{ duration: 0.3 }}
             className="overflow-hidden"
           >
-            <div className="p-4 pt-2 text-muted-foreground">
+            <div className="p-4 pt-2 text-muted-foreground font-figtree">
               {faq.answer}
             </div>
           </motion.div>

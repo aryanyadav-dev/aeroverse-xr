@@ -64,3 +64,156 @@
     position: relative;
   }
 }
+/*-------------------------------------------------------------- FONTS --------------------------------------------------------------*/
+
+/*-------------------------------------------------------------- Zodiak ----------------------------------------------------------------*/
+@font-face {
+  font-family: 'Zodiak';
+  src: url("/fonts/Awesome Serif Desktop Fonts/Variable Fonts/Zodiak/Zodiak-Black.otf") format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Zodiak';
+  src: url("/fonts/Awesome Serif Desktop Fonts/Variable Fonts/Zodiak/Zodiak-ExtraBold.otf") format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Zodiak';
+  src: url("/fonts/Awesome Serif Desktop Fonts/Variable Fonts/Zodiak/Zodiak-Bold.otf") format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Zodiak';
+  src: url("/fonts/Awesome Serif Desktop Fonts/Variable Fonts/Zodiak/Zodiak-Regular.otf") format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Zodiak';
+  src: url("/fonts/Awesome Serif Desktop Fonts/Variable Fonts/Zodiak/Zodiak-Light.otf") format('opentype');
+  font-weight: 200 ;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Zodiak';
+  src: url("/fonts/Awesome Serif Desktop Fonts/Variable Fonts/Zodiak/Zodiak-Thin.otf") format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Zodiak';
+  src: url("/fonts/Awesome Serif Desktop Fonts/Variable Fonts/Zodiak/Zodiak-BlackItalic.otf") format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Zodiak';
+  src: url("/fonts/Awesome Serif Desktop Fonts/Variable Fonts/Zodiak/Zodiak-ExtraBoldItalic.otf") format('opentype');
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Zodiak';
+  src: url("/fonts/Awesome Serif Desktop Fonts/Variable Fonts/Zodiak/Zodiak-BoldItalic.otf") format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Zodiak';
+  src: url("/fonts/Awesome Serif Desktop Fonts/Variable Fonts/Zodiak/Zodiak-Italic.otf") format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Zodiak';
+  src: url("/fonts/Awesome Serif Desktop Fonts/Variable Fonts/Zodiak/Zodiak-LightItalic.otf") format('opentype');
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Zodiak';
+  src: url("/fonts/Awesome Serif Desktop Fonts/Variable Fonts/Zodiak/Zodiak-Italic.otf") format('opentype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+/*------------------------------------------------------------------ Sentient --------------------------------------------------------------------*/
+
+@font-face{
+  font-family: 'Sentient';
+  src: url("/fonts/Awsome Serif Desktop Fonts/Variable Fonts/Sentient/Sentient-Black.otf") format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Sentient';
+  src: url("/fonts/Awsome Serif Desktop Fonts/Variable Fonts/Sentient/Sentient-Bold.otf") format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Sentient';
+  src: url("/fonts/Awsome Serif Desktop Fonts/Variable Fonts/Sentient/Sentient-Regular.otf") format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Sentient';
+  src: url("/fonts/Awsome Serif Desktop Fonts/Variable Fonts/Sentient/Sentient-Light.otf") format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Sentient';
+  src: url("/fonts/Awsome Serif Desktop Fonts/Variable Fonts/Sentient/Sentient-Thin.otf") format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Sentient';
+  src: url("/fonts/Awsome Serif Desktop Fonts/Variable Fonts/Sentient/Sentient-BlackItalic.otf") format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face{
+  font-family: 'Sentient';
+  src: url("/fonts/Awsome Serif Desktop Fonts/Variable Fonts/Sentient/Sentient-BoldItalic.otf") format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face{
+  font-family: 'Sentient';
+  src: url("/fonts/Awsome Serif Desktop Fonts/Variable Fonts/Sentient/Sentient-Italic.otf") format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face{
+  font-family: 'Sentient';
+  src: url("/fonts/Awsome Serif Desktop Fonts/Variable Fonts/Sentient/Sentient-LightItalic.otf") format('opentype');
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face{
+  font-family: 'Sentient';
+  src: url("/fonts/Awsome Serif Desktop Fonts/Variable Fonts/Sentient/Sentient-Italic.otf") format('opentype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+/*------------------------------------------------------------------------ Figtree -----------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'Figtree';
+  src: url("/fonts/Awsome Serif Desktop Fonts/Variable Fonts/Figtree/Figtree-Regular.ttf") format('TrueType');
+  font-weight: 400;
+  font-style: normal;
+}
+font-face {
+  font-family: 'Figtree';
+  src: url("/fonts/Awsome Serif Desktop Fonts/Variable Fonts/Figtree/Figtree-Semibold.ttf") format('TrueType');
+  font-weight: 600;
+  font-style: normal;
+}
