@@ -91,7 +91,7 @@ export default function ContactSection() {
           </div>
           <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-8 mt-4">
             <a
-                href="https://forms.gle/1234567890"
+                href="https://forms.gle/d5a6y1FGKsDgi9fF7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 max-w-xs bg-white border border-slate-200 rounded-2xl shadow-md px-6 py-5 flex flex-col items-center justify-center hover:shadow-lg hover:-translate-y-1 transition-all group"
@@ -101,7 +101,7 @@ export default function ContactSection() {
               <span className="text-sm text-slate-500 text-center">Found a bug? Help us improve by reporting it here.</span>
             </a>
             <a
-                href="https://forms.gle/1234567890"
+                href="https://forms.gle/NkBiTYgCQgwVEXGN9"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 max-w-xs bg-white border border-slate-200 rounded-2xl shadow-md px-6 py-5 flex flex-col items-center justify-center hover:shadow-lg hover:-translate-y-1 transition-all group"
