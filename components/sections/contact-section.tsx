@@ -91,7 +91,7 @@ export default function ContactSection() {
           </div>
           <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-8 mt-4">
             <a
-                href="https://docs.google.com/forms/d/BUG_REPORT_FORM_ID/viewform"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSf0VPVutYhdVd-wKduJjZQT2l8k01qRlSmYOhj1YjKFgG_kdw/viewform?usp=dialog"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 max-w-xs bg-white border border-slate-200 rounded-2xl shadow-md px-6 py-5 flex flex-col items-center justify-center hover:shadow-lg hover:-translate-y-1 transition-all group"
@@ -101,7 +101,7 @@ export default function ContactSection() {
               <span className="text-sm text-slate-500 text-center">Found a bug? Help us improve by reporting it here.</span>
             </a>
             <a
-                href="https://docs.google.com/forms/d/FEATURE_REQUEST_FORM_ID/viewform"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScA885Xqo2JkvWW-RqDygbERGTrTkEsLB_4sl2ewCJbFflxNg/viewform?usp=dialog"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 max-w-xs bg-white border border-slate-200 rounded-2xl shadow-md px-6 py-5 flex flex-col items-center justify-center hover:shadow-lg hover:-translate-y-1 transition-all group"
