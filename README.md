@@ -8,6 +8,12 @@ Transforming the way we explore the sky. Aeroverse XR is dedicated to revolution
 
 Aeroverse XR is a web-based platform designed to make learning about complex aerospace technologies accessible and engaging. Users can explore detailed 3D models of aerospace components in AR, get instant AI-powered explanations, and even collaborate with others in real-time. The project aims to bridge the gap between theoretical knowledge and practical understanding in the aerospace domain, catering to students, educators, and enthusiasts alike.
 
+## Related Repositories
+
+- [AeroVerse-XR](https://github.com/Chinmay-HS/AeroVerse-XR) – Augmented Reality (AR) application for AeroVerse.
+- [AeroVerse-XR-Headsets](https://github.com/Chinmay-HS/AeroVerse-XR-Headsets) – Virtual Reality (VR) application tailored for headsets.
+
+
 ## Key Features
 
 *   **Immersive AR Exploration**: Scan and explore detailed 3D models of aerospace components (like the James Webb Space Telescope, Starlink satellites, Curiosity Rover, and Turbofan Engines) in your real-world environment.
