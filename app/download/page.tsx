@@ -25,7 +25,7 @@ export default function DownloadPage() {
                 View and interact with 3D aerospace models on your Android smartphone or tablet
               </p>
               <Button asChild className="w-auto px-6">
-                <a href="/builds/AeroverseXR_AR.apk" download>
+                <a href="/builds/AeroVerse%20XR_AR.apk" download>
                   <Image src="/playstore.png" alt="Android" width={20} height={20} className="mr-2" />
                   Download Android APK
                   <Download className="w-4 h-4 ml-2" />
@@ -40,7 +40,7 @@ export default function DownloadPage() {
                 Immersive virtual reality experience for exploring aerospace designs in full scale
               </p>
               <Button asChild className="w-auto px-6">
-                <a href="/builds/AeroverseXR_VR.apk" download>
+                <a href="/builds/AeroVerseXR_VR.apk" download>
                   Download VR APK
                   <Download className="w-4 h-4 ml-2" />
                 </a>
